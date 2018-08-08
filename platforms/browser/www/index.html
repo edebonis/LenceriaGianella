@@ -49,7 +49,7 @@
         <title>Lenceria Gianella</title>
     </head>
     <body>
-		<!-- jquery mobile page 1 -->
+		<!-- jquery mobile page Inicio -->
 		<div data-role="page" id="Inicio">
 			<div role="main" class="ui-content">
 				<div class="miapp">
@@ -57,12 +57,12 @@
                         <a href="#Calcular" data-transition="slideup" class="boton" >Calcular</a>
                         <a href="#Cortes" data-transition="slideup" class="boton">Cortes</a>
                     </div>
-        </div>
+                 </div>
+		    </div>
 		</div>
-		</div>
-		<!-- end page 1 -->
+		<!-- end page Inicio -->
 
-		<!-- page 2 -->
+		<!-- page Calcular -->
 		<div data-role="page" id="Calcular">
 			<div background-color="white" align="center" >
 				<img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
@@ -77,9 +77,9 @@
                     </div>
         </div>
 		</div>
-		<!-- end page 2 -->
+		<!-- end page Calcular -->
 
-        <!-- page 3 -->
+        <!-- page Cortes -->
         <div data-role="page" id="Cortes">
             <div background-color="white" align="center" >
                 <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
@@ -87,10 +87,21 @@
             <div role="main" class="ui-content">
                 <a href="#Inicio" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al inicio</a>
                 <h4 align="center">Listado de cortes</h4>
+                <a href="#NuevoCorte" data-transition="slideup" float=left class="boton">Corte Nuevo</a>
             </div>
         </div>
-        <!-- end page 3 -->
+        <!-- end page Cortes -->
 
+        <!-- page Nuevo Corte -->
+        <div data-role="page" id="NuevoCorte">
+            <div background-color="white" align="center" >
+                <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
+            </div>
+            <div role="main" class="ui-content">
+                <a href="#Cortes" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al listado</a>
+            </div>
+        </div>
+        <!-- end page Nuevo Corte -->
 
 <script type="text/javascript" src="cordova.js"></script><script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script><script type="text/javascript" id="jqm-trans-disable">
 		/* For having a faster transition */
