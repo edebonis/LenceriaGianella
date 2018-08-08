@@ -18,7 +18,7 @@
     under the License.
 -->
 <html>
-    <head>
+<head>
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
@@ -27,94 +27,109 @@
             * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src &apos;self&apos; data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.css">
-		<style>
-		/* For avoiding title truncation in wp8 */
-		.ui-header .ui-title {
-				overflow: visible !important;
-		}
-		/* For fixing the absolute position issue for the default cordova gen page*/
-		#cjp-accordion1 .app {
-				left: 5px !important;
-				margin: 5px !important;
-				position: relative !important;
-		}
-		</style>
+            -->
+            <meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src &apos;self&apos; data: content:;">
+            <meta name="format-detection" content="telephone=no">
+            <meta name="msapplication-tap-highlight" content="no">
+            <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+            <link rel="stylesheet" type="text/css" href="css/estilo.css">
+            <link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.css">
+            <style>
+              /* For avoiding title truncation in wp8 */
+              .ui-header .ui-title {
+                overflow: visible !important;
+            }
+            /* For fixing the absolute position issue for the default cordova gen page*/
+            #cjp-accordion1 .app {
+                left: 5px !important;
+                margin: 5px !important;
+                position: relative !important;
+            }
+        </style>
         <title>Lenceria Gianella</title>
     </head>
     <body>
-		<!-- jquery mobile page Inicio -->
-		<div data-role="page" id="Inicio">
-			<div role="main" class="ui-content">
-				<div class="miapp">
-                    <div class= "flex-direction">
-                        <a href="#Calcular" data-transition="slideup" class="boton" >Calcular</a>
-                        <a href="#Cortes" data-transition="slideup" class="boton">Cortes</a>
-                    </div>
-                 </div>
-		    </div>
-		</div>
-		<!-- end page Inicio -->
-
-		<!-- page Calcular -->
-		<div data-role="page" id="Calcular">
-			<div background-color="white" align="center" >
-				<img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
-            </div>
-
-			<div role="main" class="ui-content">
-                <a href="#Inicio" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al inicio</a>
-                <h4 align="center">Calcular</h4>
-                    <div class="miapp2">
-                    <div class= "flex-direction">
-                        <a href="#page1" data-transition="slideup" class="boton">Calcular</a>
-                        <a href="#page2" data-transition="slideup" class="boton">Calcular</a>
-                    </div>
-                    </div>
-        </div>
-		</div>
-		<!-- end page Calcular -->
-
-        <!-- page Cortes -->
-        <div data-role="page" id="Cortes">
-            <div background-color="white" align="center" >
-                <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
-            </div>
-            <div role="main" class="ui-content">
-                <a href="#Inicio" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al inicio</a>
-                <h4 align="center">Listado de cortes</h4>
-                <a href="#NuevoCorte" data-transition="slideup" class="boton">Corte Nuevo</a>
-                <div class="miapp2">
-                </div>
+      <!-- jquery mobile page Inicio -->
+      <div data-role="page" id="Inicio">
+       <div role="main" class="ui-content">
+        <div class="miapp">
+            <div class= "flex-direction">
+                <a href="#Calcular" data-transition="slideup" class="boton" >Calcular</a>
+                <a href="#Cortes" data-transition="slideup" class="boton">Cortes</a>
             </div>
         </div>
-        <!-- end page Cortes -->
+    </div>
+</div>
+<!-- end page Inicio -->
 
-        <!-- page Nuevo Corte -->
-        <div data-role="page" id="NuevoCorte">
-            <div background-color="white" align="center" >
-                <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
-            </div>
-            <div role="main" class="ui-content">
-                <a href="#Cortes" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al listado</a>
-                <div class="miapp2">
-                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" value="">
-                </div>
+<!-- page Calcular -->
+<div data-role="page" id="Calcular">
+   <div background-color="white" align="center" >
+    <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
+</div>
+
+<div role="main" class="ui-content">
+    <a href="#Inicio" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al inicio</a>
+    <h4 align="center">Calcular</h4>
+    <div class="miapp2">
+        <div class= "flex-direction">
+            <a href="#page1" data-transition="slideup" class="boton">Calcular</a>
+            <a href="#page2" data-transition="slideup" class="boton">Calcular</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end page Calcular -->
+
+<!-- page Cortes -->
+<div data-role="page" id="Cortes">
+    <div background-color="white" align="center" >
+        <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
+    </div>
+    <div role="main" class="ui-content">
+        <a href="#Inicio" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al inicio</a>
+        <h4 align="center">Listado de cortes</h4>
+        <a href="#NuevoCorte" data-transition="slideup" class="boton">Corte Nuevo</a>
+        <div class="miapp2">
+        </div>
+    </div>
+</div>
+<!-- end page Cortes -->
+
+<!-- page Nuevo Corte -->
+<div data-role="page" id="NuevoCorte">
+    <div background-color="white" align="center" >
+        <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
+    </div>
+    <div role="main" class="ui-content">
+        <a href="#Cortes" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al listado</a>
+        <div class="miapp2">
+
+            <label for="text-basic">Nombre:</label>
+            <input type="text" name="textinput-1" id="Nombre" placeholder="Nombre" value="">
+            <label for="text-basic">Número de corte:</label>
+            <input type="text" name="textinput-1" id="NumeroDeCorte" placeholder="Ńúmero de corte" value="">
+            <div class="colores">
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    
+                    <input type="checkbox" name="checkbox-6" id="checkbox-6">
+                    <label for="checkbox-6">b</label>
+                    <input type="checkbox" name="checkbox-7" id="checkbox-7" checked="">
+                    <label for="checkbox-7"><em>i</em></label>
+                    <input type="checkbox" name="checkbox-8" id="checkbox-8">
+                    <label for="checkbox-8">u</label>
+            </fieldset>
             </div>
         </div>
-        <!-- end page Nuevo Corte -->
+    </div>
+</div>
+<!-- end page Nuevo Corte -->
 
 <script type="text/javascript" src="cordova.js"></script><script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script><script type="text/javascript" id="jqm-trans-disable">
-		/* For having a faster transition */
-		$(document).on("mobileinit", function() {
-				$.mobile.defaultPageTransition = "none";
-				$.mobile.defaultDialogTransition = "none";
-		});
-		</script><script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+/* For having a faster transition */
+$(document).on("mobileinit", function() {
+    $.mobile.defaultPageTransition = "none";
+    $.mobile.defaultDialogTransition = "none";
+});
+</script><script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script><script type="text/javascript" src="js/index.js"></script></body>
 </html>
