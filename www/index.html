@@ -107,17 +107,17 @@
 
             <label for="text-basic">Nombre:</label>
             <input type="text" name="textinput-1" id="Nombre" placeholder="Nombre" value="">
-            <label for="text-basic">Número de corte:</label>
-            <input type="text" name="textinput-1" id="NumeroDeCorte" placeholder="Ńúmero de corte" value="">
+            <label for="number">Número de corte:</label>
+            <input type="number" name="numberinput-1" id="nroCorte" placeholder="Ńúmero de corte" value="">
             <div class="colores">
             <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
                     
                     <input type="checkbox" name="checkbox-6" id="checkbox-6">
-                    <label for="checkbox-6">b</label>
-                    <input type="checkbox" name="checkbox-7" id="checkbox-7" checked="">
-                    <label for="checkbox-7"><em>i</em></label>
+                    <label for="checkbox-6">Rojo</label>
+                    <input type="checkbox" name="checkbox-7" id="checkbox-7" >
+                    <label for="checkbox-7"><em>Negro</em></label>
                     <input type="checkbox" name="checkbox-8" id="checkbox-8">
-                    <label for="checkbox-8">u</label>
+                    <label for="checkbox-8">Blanco</label>
             </fieldset>
             </div>
         </div>
@@ -131,5 +131,9 @@ $(document).on("mobileinit", function() {
     $.mobile.defaultPageTransition = "none";
     $.mobile.defaultDialogTransition = "none";
 });
-</script><script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+</script>
+<script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/cantidadPrendas.js"></script>
+</body>
 </html>
