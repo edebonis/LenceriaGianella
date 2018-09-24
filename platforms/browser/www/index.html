@@ -28,7 +28,10 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
             -->
-            <meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src &apos;self&apos; data: content:;">
+            <!--<meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src &apos;self&apos; data: content:;">
+            -->
+            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: 'unsafe-inline' https://ssl.gstatic.com 'unsafe-eval' ws: 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *;">
+
             <meta name="format-detection" content="telephone=no">
             <meta name="msapplication-tap-highlight" content="no">
             <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -53,8 +56,8 @@
       <div data-role="page" id="Inicio">
        <div role="main" class="ui-content">
         <div class="miapp">
-            <div class= "flex-direction">
-                <a href="#Calcular" data-transition="slideup" class="boton" >Calcular</a>
+            <div class="flex-direction">
+                <a href="#Calcular" data-transition="slideup" class="boton">Calcular!!!</a>
                 <a href="#Cortes" data-transition="slideup" class="boton">Cortes</a>
             </div>
         </div>
@@ -64,7 +67,7 @@
 
 <!-- page Calcular -->
 <div data-role="page" id="Calcular">
-   <div background-color="white" align="center" >
+   <div background-color="white" align="center">
     <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
 </div>
 
@@ -72,7 +75,7 @@
     <a href="#Inicio" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al inicio</a>
     <h4 align="center">Calcular</h4>
     <div class="miapp2">
-        <div class= "flex-direction">
+        <div class="flex-direction">
             <a href="#page1" data-transition="slideup" class="boton">Calcular</a>
             <a href="#page2" data-transition="slideup" class="boton">Calcular</a>
         </div>
@@ -83,7 +86,7 @@
 
 <!-- page Cortes -->
 <div data-role="page" id="Cortes">
-    <div background-color="white" align="center" >
+    <div background-color="white" align="center">
         <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
     </div>
     <div role="main" class="ui-content">
@@ -98,7 +101,7 @@
 
 <!-- page Nuevo Corte -->
 <div data-role="page" id="NuevoCorte">
-    <div background-color="white" align="center" >
+    <div background-color="white" align="center">
         <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
     </div>
     <div role="main" class="ui-content">
@@ -116,7 +119,7 @@
                     <input type="checkbox" name="checkbox-6" id="Rojo">
                     <label for="Rojo">Rojo</label>
                     
-                    <input type="checkbox" name="checkbox-7" id="Negro" >
+                    <input type="checkbox" name="checkbox-7" id="Negro">
                     <label for="Negro"><em>Negro</em></label>
                     
                     <input type="checkbox" name="checkbox-8" id="Blanco">
