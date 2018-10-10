@@ -24,13 +24,16 @@ function myFunction(){
 		color = "Blanco";	
 	}
 
+
+	window.localStorage.setItem('color',color);
+
 	console.log(nombre);
 	console.log(nroCorte);
 	console.log(fecha);
 	console.log(talle);
 	console.log(taco);
 	console.log(pares);
-	console.log(color);
+	console.log(window.localStorage.getItem('color'));
 	console.log(prendas);
 }
 /*

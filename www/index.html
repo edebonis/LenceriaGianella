@@ -105,7 +105,7 @@
         <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
     </div>
     <div role="main" class="ui-content">
-        <a href="#Cortes" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al listado</a>
+        <a href="#Cortes" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al listado</a>
         <div class="miapp2">
 
             <label for="text-basic">Nombre:</label>
@@ -114,24 +114,36 @@
             <input type="number" name="numberinput-1" id="nroCorte" placeholder="Ńúmero de corte" value="">
           
             <div class="colores">
-            
             <fieldset data-role="controlgroup">
-                    <input type="checkbox" name="checkbox-6" id="Rojo">
-                    <label for="Rojo">Rojo</label>
+                    <input type="checkbox" name="checkbox-6" id="Rojo" class="custom">
+                    <label for="Rojo">Rojo</label>
+                    <input type="checkbox" name="checkbox-7" id="Negro" class="custom">
+                    <label for="Negro">Negro</label>
+                    <input type="checkbox" name="checkbox-8" id="Blanco" class="custom">
+                    <label for="Blanco">Blanco</label>
 
-                    <input type="checkbox" name="checkbox-7" id="Negro" >
-                    <label for="Negro">Negro</label>
-                    
-                    <input type="checkbox" name="checkbox-8" id="Blanco">
-                    <label for="Blanco">Blanco</label>
-
-                    <input type="submit" id="botonEnviar">
-            
             </fieldset>
+            <input type="submit" id="botonEnviar" value="Siguiente">
 
             </div>
         </div>
     </div>
+    <!--<div class="ui-field-contain">
+  <fieldset data-role="controlgroup">
+    <legend>Choose as many snacks as you'd like:</legend>
+      <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom">
+      <label for="checkbox-1a">Cheetos</label>
+ 
+      <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom">
+      <label for="checkbox-2a">Doritos</label>
+ 
+      <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom">
+      <label for="checkbox-3a">Fritos</label>
+ 
+      <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom">
+      <label for="checkbox-4a">Sun Chips</label>
+    </fieldset>
+</div> -->
 </div>
 <!-- end page Nuevo Corte -->
 
