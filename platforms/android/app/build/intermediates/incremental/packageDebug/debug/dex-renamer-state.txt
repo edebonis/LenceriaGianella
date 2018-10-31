@@ -1,0 +1,4 @@
+#Wed Oct 31 14:51:51 ART 2018
+base.0=/home/drosema/AlCal/LenceriaGianella/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/home/drosema/AlCal/LenceriaGianella/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
