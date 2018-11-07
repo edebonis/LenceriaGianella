@@ -30,7 +30,7 @@
             -->
             <!--<meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src &apos;self&apos; data: content:;">
             -->
-            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: 'unsafe-inline' https://ssl.gstatic.com 'unsafe-eval' ws: 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *;">
+            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: 'unsafe-inline' https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
 
             <meta name="format-detection" content="telephone=no">
             <meta name="msapplication-tap-highlight" content="no">
@@ -57,8 +57,8 @@
       <div data-role="page" id="Inicio">
        <div role="main" class="ui-content">
         <div class="miapp">
-            <div class="flex-direction">
-                <a href="#Calcular" data-transition="slideup" class="boton">Calcular</a>
+            <div class= "flex-direction">
+                <a href="#Calcular" data-transition="slideup" class="boton" >Calcular</a>
                 <a href="#Cortes" data-transition="slideup" class="boton">Cortes</a>
             </div>
         </div>
@@ -68,7 +68,7 @@
 
 <!-- page Calcular -->
 <div data-role="page" id="Calcular">
-   <div background-color="white" align="center">
+   <div background-color="white" align="center" >
     <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
 </div>
 
@@ -76,7 +76,7 @@
     <a href="#Inicio" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al inicio</a>
     <h4 align="center">Calcular</h4>
     <div class="miapp2">
-        <div class="flex-direction">
+        <div class= "flex-direction">
             <a href="#page1" data-transition="slideup" class="boton">Calcular</a>
             <a href="#page2" data-transition="slideup" class="boton">Calcular</a>
         </div>
@@ -87,7 +87,7 @@
 
 <!-- page Cortes -->
 <div data-role="page" id="Cortes">
-    <div background-color="white" align="center">
+    <div background-color="white" align="center" >
         <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
     </div>
     <div role="main" class="ui-content">
@@ -102,12 +102,20 @@
 
 <!-- page Nuevo Corte -->
 <div data-role="page" id="NuevoCorte">
+<<<<<<< HEAD
     
     <div background-color="white" align="center">
         <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
     </div>
     <div role="main" class="ui-content">
          <a href="#Cortes" data-transition="slidedown" style="max-width:100%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al listado</a>
+=======
+    <div background-color="white" align="center" >
+        <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
+    </div>
+    <div role="main" class="ui-content">
+        <a href="#Cortes" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al listado</a>
+>>>>>>> 9851c3a79e362889f4e18ad73b6d7f40f013e634
         <div class="miapp2">
 
             <label for="text-basic">Nombre:</label>
@@ -117,6 +125,7 @@
             <input type="number" name="numberinput-1" id="nroCorte" placeholder="Ńúmero de corte" value="">
           
             <div class="colores">
+<<<<<<< HEAD
             
            <fieldset data-role="controlgroup">
                     <label>
@@ -133,11 +142,42 @@
 
                 </fieldset>
                 <input type="submit" id="botonEnviar" value="Siguiente">
+=======
+            <fieldset data-role="controlgroup">
+                    <input type="checkbox" name="checkbox-6" id="Rojo" class="custom">
+                    <label for="Rojo">Rojo</label>
+                    <input type="checkbox" name="checkbox-7" id="Negro" class="custom">
+                    <label for="Negro">Negro</label>
+                    <input type="checkbox" name="checkbox-8" id="Blanco" class="custom">
+                    <label for="Blanco">Blanco</label>
+
+            </fieldset>
+            <input type="submit" id="botonEnviar" value="Siguiente">
+>>>>>>> 9851c3a79e362889f4e18ad73b6d7f40f013e634
 
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
+=======
+    <!--<div class="ui-field-contain">
+  <fieldset data-role="controlgroup">
+    <legend>Choose as many snacks as you'd like:</legend>
+      <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom">
+      <label for="checkbox-1a">Cheetos</label>
+ 
+      <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom">
+      <label for="checkbox-2a">Doritos</label>
+ 
+      <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom">
+      <label for="checkbox-3a">Fritos</label>
+ 
+      <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom">
+      <label for="checkbox-4a">Sun Chips</label>
+    </fieldset>
+</div> -->
+>>>>>>> 9851c3a79e362889f4e18ad73b6d7f40f013e634
 </div>
 <!-- end page Nuevo Corte -->
 
