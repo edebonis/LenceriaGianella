@@ -30,7 +30,7 @@
             -->
             <!--<meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src &apos;self&apos; data: content:;">
             -->
-            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: 'unsafe-inline' https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: 'unsafe-inline' https://ssl.gstatic.com 'unsafe-eval' ws: 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *;">
 
             <meta name="format-detection" content="telephone=no">
             <meta name="msapplication-tap-highlight" content="no">
@@ -57,8 +57,8 @@
       <div data-role="page" id="Inicio">
        <div role="main" class="ui-content">
         <div class="miapp">
-            <div class= "flex-direction">
-                <a href="#Calcular" data-transition="slideup" class="boton" >Calcular</a>
+            <div class="flex-direction">
+                <a href="#Calcular" data-transition="slideup" class="boton">Calcular</a>
                 <a href="#Cortes" data-transition="slideup" class="boton">Cortes</a>
             </div>
         </div>
@@ -68,7 +68,7 @@
 
 <!-- page Calcular -->
 <div data-role="page" id="Calcular">
-   <div background-color="white" align="center" >
+   <div background-color="white" align="center">
     <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
 </div>
 
@@ -76,7 +76,7 @@
     <a href="#Inicio" data-transition="slidedown" style="max-width:20%" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Volver al inicio</a>
     <h4 align="center">Calcular</h4>
     <div class="miapp2">
-        <div class= "flex-direction">
+        <div class="flex-direction">
             <a href="#page1" data-transition="slideup" class="boton">Calcular</a>
             <a href="#page2" data-transition="slideup" class="boton">Calcular</a>
         </div>
@@ -87,7 +87,7 @@
 
 <!-- page Cortes -->
 <div data-role="page" id="Cortes">
-    <div background-color="white" align="center" >
+    <div background-color="white" align="center">
         <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
     </div>
     <div role="main" class="ui-content">
@@ -103,7 +103,7 @@
 <!-- page Nuevo Corte -->
 <div data-role="page" id="NuevoCorte">
     
-    <div background-color="white" align="center" >
+    <div background-color="white" align="center">
         <img src="www/img/logo.png" style="max-width:60%;width:auto;height:auto;">
     </div>
     <div role="main" class="ui-content">
@@ -134,7 +134,7 @@
                     Blanco</label>
 
                 </fieldset>
-                <input type="submit" id="botonEnviar" value="Siguiente">
+                <a href="#Inicio" style="text-decoration: none;"><input type="submit" id="botonEnviar" value="Siguiente"></a>
 
             </div>
         </div>
